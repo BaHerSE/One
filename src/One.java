@@ -8,12 +8,16 @@ import java.util.Scanner;
 public class One {
 
   public static void main(String[] args) {
+    //输入姓名
     Scanner sc = new Scanner(System.in);
-    String name = sc.nextLine() ;
+    String name = sc.nextLine();
     st(name);
+
   }
 
   public static void st(String name) {
-    System.out.println("welcome to " + name);
+    System.out.println("* * * * * * * * * * * * * * * * *");
+    System.out.println("* " + "   welcome to java ，" + name + "    *");
+    System.out.println("* * * * * * * * * * * * * * * * *");
   }
 }
