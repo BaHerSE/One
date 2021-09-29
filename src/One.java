@@ -8,16 +8,43 @@ import java.util.Scanner;
 public class One {
 
   public static void main(String[] args) {
-    //输入姓名
     Scanner sc = new Scanner(System.in);
-    String name = sc.nextLine();
-    st(name);
 
+    // 输入姓名
+    /*String name = sc.nextLine();
+     st(name);*/
+
+    // 温度
+    /*int num = sc.nextInt();
+    temperature(num);*/
+
+    //周长
+    double bj = sc.nextDouble();
+    circleLong(bj);
+    circleLong(bj);
+
+    //面积
+    circlemj(bj);
   }
 
   public static void st(String name) {
     System.out.println("* * * * * * * * * * * * * * * * *");
     System.out.println("* " + "   welcome to java ，" + name + "    *");
     System.out.println("* * * * * * * * * * * * * * * * *");
+  }
+
+  public static void temperature(int F) {
+    int c = (F - 32) * 5 / 9;
+    System.out.println(c);
+  }
+
+  public static void circleLong(double bj) {
+    double zc = 2 * bj * 3.14;
+    System.out.println(zc);
+  }
+
+  public static void circlemj(double bj) {
+    double mj = 3.14 * bj * bj;
+    System.out.println(mj);
   }
 }
